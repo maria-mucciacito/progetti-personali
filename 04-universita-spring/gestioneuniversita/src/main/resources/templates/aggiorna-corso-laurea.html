@@ -1,0 +1,33 @@
+<!--<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Aggiorna corso di laurea</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+</head>
+<body>
+<div class="header-menu">Università</div>
+<div class="container">
+	<div class="header-section">Aggiorna corso di laurea</div>
+    <form action="#" th:action="@{/corsi-di-laurea/aggiorna/{codice}(codice=${corsoDiLaurea.codice})}"
+						th:object="${corsoDiLaurea}" method="post">
+	   <div class="item-form">Codice: <input type="text" th:field="*{codice}" id="codice" th:disabled="${codice != null}">
+            <span th:if="${#fields.hasErrors('codice')}" th:errors="*{codice}"></span>
+       </div>      
+       <div class="item-form">Nome: <input type="text" th:field="*{nome}" id="nome">
+            <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span>
+       </div>  
+       <div class="item-form">Indirizzo: <input type="text" th:field="*{indirizzo}" id="indirizzo">
+            <span th:if="${#fields.hasErrors('indirizzo')}" th:errors="*{indirizzo}"></span>
+       </div>  
+       <div class="item-form">Numero esami: <input type="number" th:field="*{numeroEsami}" id="numeroEsami">
+            <span th:if="${#fields.hasErrors('numeroEsami')}" th:errors="*{numeroEsami}"></span>
+       </div>  
+       <div><input type="submit" value="Aggiorna corso di laurea"></div>
+    </form>
+</div>
+    <div class="link-home"><a href="/">Torna alla Home</a></div>
+</body>
+
+</html>
+-->

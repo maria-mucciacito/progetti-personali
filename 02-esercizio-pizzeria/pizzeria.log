@@ -1,0 +1,699 @@
+2023-02-02 11:50:33.025  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:50:33.032  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:50:33.143  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 11:50:33.144  INFO 2240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 11:50:34.932  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:50:34.950  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:50:34.950  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:50:35.055  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:50:35.055  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1911 ms
+2023-02-02 11:50:35.727  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:50:35.795  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:50:35.808  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 3.396 seconds (JVM running for 3.978)
+2023-02-02 11:50:35.815  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:50:35.828  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:50:35.828  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:50:35.828  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:50:35.828  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:50:35.830  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@15a766cf=1})
+2023-02-02 11:50:35.831  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:50:54.708  INFO 2240 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 11:50:54.708  INFO 2240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-02 11:50:54.711  INFO 2240 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-02-02 11:50:55.274 ERROR 2240 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "ordini": An error happened during template parsing (template: "class path resource [templates/ordini.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ordini.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+Caused by: org.attoparser.ParseException: Could not parse as expression: "item : ${gestoreOrdini.generaTavoli()}" (template: "ordini" - line 14, col 10)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "item : ${gestoreOrdini.generaTavoli()}" (template: "ordini" - line 14, col 10)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	... 50 common frames omitted
+
+2023-02-02 11:50:55.285 ERROR 2240 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/ordini.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "item : ${gestoreOrdini.generaTavoli()}" (template: "ordini" - line 14, col 10)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190) ~[thymeleaf-spring5-3.0.15.RELEASE.jar:3.0.15.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1405) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1149) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-02 11:51:40.472  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:51:40.495  INFO 2240 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:51:40.498  INFO 2240 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 11:51:40.651  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:51:40.651  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:40.981  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:51:40.981  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:51:40.981  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:51:41.018  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:41.018  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 360 ms
+2023-02-02 11:51:41.205  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:51:41.220  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:51:41.226  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.626 seconds (JVM running for 69.392)
+2023-02-02 11:51:41.227  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:51:41.238  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:51:41.238  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:51:41.238  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:51:41.242  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:51:41.242  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:51:41.243  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:51:41.243  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:51:41.243  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:51:41.245  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:51:41.245  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:51:41.245  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:51:41.249  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@69bd58e2=1})
+2023-02-02 11:51:41.249  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:51:41.249  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:51:44.733  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:51:44.751  INFO 2240 --- [Thread-7] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:51:44.912  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:51:44.914  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:45.512  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:51:45.516  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:51:45.517  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:51:45.553  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:45.553  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 633 ms
+2023-02-02 11:51:45.762  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:51:45.779  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:51:45.787  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.925 seconds (JVM running for 73.953)
+2023-02-02 11:51:45.787  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:51:45.796  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:51:45.796  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:51:45.796  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:51:45.803  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:51:45.807  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:51:45.807  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:51:45.811  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@6f9ef1e6=1})
+2023-02-02 11:51:45.811  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:51:45.811  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:51:47.225  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:51:47.259  INFO 2240 --- [Thread-11] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:51:47.381  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:51:47.382  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:47.625  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:51:47.625  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:51:47.627  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:51:47.647  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:47.647  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 262 ms
+2023-02-02 11:51:47.775  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:51:47.783  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:51:47.788  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.449 seconds (JVM running for 75.954)
+2023-02-02 11:51:47.788  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:51:47.799  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:51:47.800  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:51:47.808  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@5190f8a0=1})
+2023-02-02 11:51:47.808  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:51:47.808  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:51:56.462  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:51:56.480  INFO 2240 --- [Thread-15] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:51:56.658  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:51:56.661  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:57.112  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:51:57.113  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:51:57.114  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:51:57.152  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:57.152  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 467 ms
+2023-02-02 11:51:57.357  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:51:57.370  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:51:57.377  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.807 seconds (JVM running for 85.543)
+2023-02-02 11:51:57.379  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:51:57.387  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:51:57.388  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:51:57.389  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:51:57.389  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:51:57.390  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:51:57.391  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:51:57.392  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:51:57.393  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:51:57.395  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:51:57.396  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:51:57.397  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:51:57.399  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@114c9462=1})
+2023-02-02 11:51:57.400  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:51:57.402  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:51:58.828  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:51:58.846  INFO 2240 --- [Thread-19] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:51:59.134  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:51:59.157  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:51:59.639  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:51:59.640  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:51:59.641  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:51:59.680  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:51:59.680  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 515 ms
+2023-02-02 11:51:59.835  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:51:59.852  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:51:59.857  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.842 seconds (JVM running for 88.022)
+2023-02-02 11:51:59.863  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:51:59.879  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:51:59.881  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:51:59.881  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:51:59.882  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:51:59.885  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:51:59.888  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:51:59.891  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:51:59.901  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:51:59.902  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:51:59.903  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:51:59.904  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:51:59.906  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@fe4225c=1})
+2023-02-02 11:51:59.906  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:51:59.914  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:52:01.295  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:52:01.319  INFO 2240 --- [Thread-23] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:52:01.469  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:52:01.470  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:52:01.903  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:52:01.903  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:52:01.903  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:52:01.955  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:52:01.955  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 475 ms
+2023-02-02 11:52:02.185  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:52:02.209  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:52:02.215  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.79 seconds (JVM running for 90.382)
+2023-02-02 11:52:02.217  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:52:02.233  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:52:02.235  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:52:02.235  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:52:02.241  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:52:02.249  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:52:02.249  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:52:02.255  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:52:02.266  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:52:02.283  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:52:02.289  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:52:02.297  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:52:02.321  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@64acb81a=1})
+2023-02-02 11:52:02.341  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:52:02.346  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:52:04.669  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:52:04.699  INFO 2240 --- [Thread-27] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:52:04.875  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:52:04.875  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:52:05.110  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:52:05.111  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:52:05.112  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:52:05.146  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:52:05.147  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 269 ms
+2023-02-02 11:52:05.279  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:52:05.299  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:52:05.302  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.474 seconds (JVM running for 93.468)
+2023-02-02 11:52:05.303  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:52:05.319  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:52:05.321  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:52:05.321  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:52:05.321  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:52:05.323  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:52:05.324  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:52:05.326  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:52:05.327  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:52:05.328  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:52:05.329  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:52:05.329  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:52:05.331  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@56aab874=1})
+2023-02-02 11:52:05.331  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:52:05.332  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:52:06.725  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:52:06.757  INFO 2240 --- [Thread-31] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:52:06.866  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:52:06.866  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:52:07.025  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:52:07.025  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:52:07.025  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:52:07.066  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:52:07.066  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2023-02-02 11:52:07.156  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:52:07.171  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:52:07.175  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.333 seconds (JVM running for 95.341)
+2023-02-02 11:52:07.175  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:52:07.181  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:52:07.181  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:52:07.185  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:52:07.185  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:52:07.185  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:52:07.185  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:52:07.185  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:52:07.189  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:52:07.191  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:52:07.191  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:52:07.191  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:52:07.195  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@6a6f4a25=1})
+2023-02-02 11:52:07.195  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:52:07.197  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:52:14.831  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:52:14.878  INFO 2240 --- [Thread-35] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:52:14.981  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:52:14.981  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:52:15.292  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:52:15.292  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:52:15.292  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:52:15.327  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:52:15.327  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 343 ms
+2023-02-02 11:52:15.507  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:52:15.527  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:52:15.530  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.59 seconds (JVM running for 103.696)
+2023-02-02 11:52:15.532  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:52:15.544  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:52:15.547  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:52:15.548  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:52:15.548  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:52:15.548  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:52:15.549  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:52:15.550  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:52:15.551  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:52:15.552  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:52:15.553  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:52:15.553  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:52:15.555  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@4eda1398=1})
+2023-02-02 11:52:15.556  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:52:15.557  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:52:17.982  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:52:17.996  INFO 2240 --- [Thread-39] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:52:18.118  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:52:18.126  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:52:18.326  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:52:18.329  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:52:18.329  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:52:18.356  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:52:18.357  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 230 ms
+2023-02-02 11:52:18.468  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:52:18.475  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:52:18.482  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.407 seconds (JVM running for 106.647)
+2023-02-02 11:52:18.482  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:52:18.490  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:52:18.490  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:52:18.491  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:52:18.491  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:52:18.491  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:52:18.491  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:52:18.493  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:52:18.493  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:52:18.493  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:52:18.494  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:52:18.494  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:52:18.494  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@3c2bf295=1})
+2023-02-02 11:52:18.496  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:52:18.496  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:53:27.027  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-02-02 11:53:27.048  INFO 2240 --- [Thread-43] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:27.190  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:27.190  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:27.536  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:27.538  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:27.538  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:27.572  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:27.573  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 376 ms
+2023-02-02 11:53:27.588  WARN 2240 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordiniRunner' defined in file [C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes\it\infobasic\pizzeriaspring\util\OrdiniRunner.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [it.infobasic.pizzeriaspring.util.OrdiniRunner]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method generaTavoli() is undefined for the type OrdiniRunner
+	pc cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	Return type for the method is missing
+
+2023-02-02 11:53:27.590  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:27.607  INFO 2240 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-02-02 11:53:27.689 ERROR 2240 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ordiniRunner' defined in file [C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes\it\infobasic\pizzeriaspring\util\OrdiniRunner.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [it.infobasic.pizzeriaspring.util.OrdiniRunner]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method generaTavoli() is undefined for the type OrdiniRunner
+	pc cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	Return type for the method is missing
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.24.jar:5.3.24]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.7.jar:2.7.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.7.jar:2.7.7]
+	at it.infobasic.pizzeriaspring.PizzeriaspringApplication.main(PizzeriaspringApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.7.jar:2.7.7]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [it.infobasic.pizzeriaspring.util.OrdiniRunner]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The method generaTavoli() is undefined for the type OrdiniRunner
+	pc cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	Return type for the method is missing
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The method generaTavoli() is undefined for the type OrdiniRunner
+	pc cannot be resolved to a type
+	Syntax error, insert ";" to complete FieldDeclaration
+	Return type for the method is missing
+
+	at it.infobasic.pizzeriaspring.util.OrdiniRunner.<init>(OrdiniRunner.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 24 common frames omitted
+
+2023-02-02 11:53:29.196  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:29.196  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:29.453  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:29.455  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:29.455  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:29.479  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:29.479  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
+2023-02-02 11:53:29.592  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:53:29.602  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:53:29.607  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.438 seconds (JVM running for 177.772)
+2023-02-02 11:53:29.608  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:53:29.615  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:53:29.616  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:53:29.617  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:53:29.617  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:53:29.618  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:53:29.618  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:53:29.618  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:53:29.619  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:53:29.619  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:53:29.620  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:53:29.622  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:53:29.624  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@4cef9ef3=1})
+2023-02-02 11:53:29.624  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:53:29.625  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:53:31.470  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-02-02 11:53:31.515  INFO 2240 --- [Thread-47] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:31.641  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:31.641  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:31.866  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:31.867  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:31.867  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:31.901  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:31.901  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 257 ms
+2023-02-02 11:53:32.036  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:53:32.047  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:53:32.049  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.436 seconds (JVM running for 180.216)
+2023-02-02 11:53:32.050  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:53:32.057  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:53:32.059  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:53:32.059  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:53:32.059  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:53:32.060  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:53:32.060  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:53:32.061  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:53:32.062  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:53:32.062  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:53:32.063  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:53:32.063  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:53:32.066  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@44dc04dc=1})
+2023-02-02 11:53:32.066  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:53:32.067  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:53:40.753  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:53:40.766  INFO 2240 --- [Thread-54] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:40.896  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:40.896  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:41.150  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:41.151  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:41.152  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:41.183  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:41.185  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 287 ms
+2023-02-02 11:53:41.313  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:53:41.321  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:53:41.324  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.454 seconds (JVM running for 189.49)
+2023-02-02 11:53:41.326  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:53:41.333  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:53:41.334  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:53:41.335  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:53:41.335  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:53:41.335  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:53:41.336  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:53:41.336  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:53:41.337  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:53:41.337  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:53:41.338  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:53:41.339  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:53:41.342  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@738fcbe9=1})
+2023-02-02 11:53:41.342  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:53:41.343  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:53:42.777  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:53:42.806  INFO 2240 --- [Thread-58] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:42.934  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:42.934  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:43.124  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:43.125  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:43.126  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:43.155  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:43.155  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 219 ms
+2023-02-02 11:53:43.283  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:53:43.294  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:53:43.298  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.393 seconds (JVM running for 191.463)
+2023-02-02 11:53:43.299  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:53:43.305  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:53:43.307  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:53:43.307  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:53:43.308  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:53:43.310  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:53:43.311  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:53:43.311  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:53:43.311  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:53:43.312  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:53:43.312  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:53:43.313  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:53:43.314  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@5680488e=1})
+2023-02-02 11:53:43.314  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:53:43.315  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 11:53:44.775  INFO 2240 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-02 11:53:44.793  INFO 2240 --- [Thread-62] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-02 11:53:44.915  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 2240 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 11:53:44.915  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 11:53:45.192  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 11:53:45.193  INFO 2240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 11:53:45.195  INFO 2240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 11:53:45.221  INFO 2240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2023-02-02 11:53:45.221  INFO 2240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 303 ms
+2023-02-02 11:53:45.378  INFO 2240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 11:53:45.387  INFO 2240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 11:53:45.391  INFO 2240 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 0.517 seconds (JVM running for 193.557)
+2023-02-02 11:53:45.392  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 11:53:45.398  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 11:53:45.398  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 11:53:45.399  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 11:53:45.399  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 11:53:45.399  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 11:53:45.400  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 11:53:45.400  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 11:53:45.401  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 11:53:45.401  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 11:53:45.401  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 11:53:45.402  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 11:53:45.403  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@3d465b16=1})
+2023-02-02 11:53:45.403  INFO 2240 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 11:53:45.404  INFO 2240 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-02-02 15:00:46.448  INFO 13456 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Starting PizzeriaspringApplication using Java 17.0.5 on DESKTOP-0ECG1D2 with PID 13456 (C:\Users\Utente\Desktop\02-esercizio-pizzeria\target\classes started by Utente in C:\Users\Utente\Desktop\02-esercizio-pizzeria)
+2023-02-02 15:00:46.448  INFO 13456 --- [restartedMain] i.i.p.PizzeriaspringApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:00:46.553  INFO 13456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 15:00:46.553  INFO 13456 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 15:00:48.432  INFO 13456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-02 15:00:48.449  INFO 13456 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-02 15:00:48.449  INFO 13456 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-02-02 15:00:48.567  INFO 13456 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-02 15:00:48.567  INFO 13456 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2014 ms
+2023-02-02 15:00:49.280  INFO 13456 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-02 15:00:49.351  INFO 13456 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-02 15:00:49.365  INFO 13456 --- [restartedMain] i.i.p.PizzeriaspringApplication          : Started PizzeriaspringApplication in 3.495 seconds (JVM running for 4.136)
+2023-02-02 15:00:49.370  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System startup
+2023-02-02 15:00:49.390  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Drink *****
+2023-02-02 15:00:49.390  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Water (0.5l) - calories: 0 - price:0.5
+2023-02-02 15:00:49.390  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Coca Cola 0.33 - calories: 100 - price:0.99
+2023-02-02 15:00:49.390  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Pizza *****
+2023-02-02 15:00:49.394  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita - calories: 800 - price; 6.5
+2023-02-02 15:00:49.394  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita calories: 802 price 10.65
+2023-02-02 15:00:49.397  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Topping *****
+2023-02-02 15:00:49.400  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Pizza Margherita topping name: Onions - price: 0.99 - calories: 200
+2023-02-02 15:00:49.400  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : ***** Menu Gadgets *****
+2023-02-02 15:00:49.402  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Shirt - price: 9.99
+2023-02-02 15:00:49.402  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.GestoreMenu      : Mug - price: 4.99
+2023-02-02 15:00:49.406  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@2a796105=1})
+2023-02-02 15:00:49.408  INFO 13456 --- [restartedMain] i.i.pizzeriaspring.util.OrdiniRunner     : System shutdown
+2023-02-02 15:00:55.804  INFO 13456 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 15:00:55.804  INFO 13456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-02 15:00:55.813  INFO 13456 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2023-02-02 15:01:08.133  INFO 13456 --- [http-nio-8080-exec-3] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@86c14c8=1})
+2023-02-02 15:03:15.740  INFO 13456 --- [http-nio-8080-exec-6] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@3b60e463=1})
+2023-02-02 15:03:57.859  INFO 13456 --- [http-nio-8080-exec-8] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@4c17365e=1})
+2023-02-02 15:04:21.419  INFO 13456 --- [http-nio-8080-exec-10] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@111336e2=1})
+2023-02-02 15:04:22.963  INFO 13456 --- [http-nio-8080-exec-2] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@1a3ca11b=1})
+2023-02-02 15:04:23.094  INFO 13456 --- [http-nio-8080-exec-4] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@188db9eb=1})
+2023-02-02 15:04:23.278  INFO 13456 --- [http-nio-8080-exec-6] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@6ea610cf=1})
+2023-02-02 15:04:23.432  INFO 13456 --- [http-nio-8080-exec-8] i.i.pizzeriaspring.util.OrdiniRunner     : Ordine(numeroOrdine=1, tavolo=Tavolo(numeroTavolo=1, numeroMassimoCoperti=4, isOccupato=false), stato=IN_CORSO, costoCoperto=1.0, ordinazione={it.infobasic.pizzeriaspring.model.food.pizza.base.PizzaMargherita@46ef5d2e=1})

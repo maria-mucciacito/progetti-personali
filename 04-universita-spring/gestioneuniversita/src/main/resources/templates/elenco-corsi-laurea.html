@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Lista corsi di laurea</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+</head>
+<body>
+<div class="header-menu">Università</div>
+<div class="header-section">Elenco corsi di laurea</div>
+ <div th:switch="${corsiDiLaurea.size()}">
+   <h4 th:case="0">Nessun corso di laurea trovato!</h4>
+   <!-- * for default case -->
+   <div th:case="*">
+   <table width="100%">
+     <thead>
+        <tr>
+            <th class="header">Codice</th>
+            <th class="header">Nome</th>
+            <th class="header">Indirizzo</th>
+            <th class="header">N. esami</th>
+            <th></th>
+            <th></th>
+        </tr>
+      </thead>
+      <tbody>
+            <tr th:each="corso : ${corsiDiLaurea}">
+               <td th:text="${corso.codice}"></td>
+               <td th:text="${corso.nome}"></td>
+               <td th:text="${corso.indirizzo}"></td>
+               <td th:text="${corso.numeroEsami}"></td>
+               <td><a th:href="@{/corsi-di-laurea/mostraFormAggiorna/{codice}(codice=${corso.codice})}">Aggiorna</i></a></td>
+               <td><a th:href="@{/corsi-di-laurea/elimina/{codice}(codice=${corso.codice})}" onclick="return confirm('Confermi la cancellazione del corso?')">Elimina</a></td>
+            </tr>
+       </tbody>
+   </table>
+   <div class="link-add"><a href="/corsi-di-laurea/mostraFormAggiungi">Aggiungi corso di laurea</a></div>
+  </div>
+    <div class="link-home"><a href="/">Torna alla Home</a></div>
+</html>

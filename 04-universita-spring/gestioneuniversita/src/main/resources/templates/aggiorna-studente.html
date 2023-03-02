@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Aggiorna studente</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" th:href="@{/css/layout.css}"/>
+</head>
+<body>
+<div class="header-menu">Università</div>
+<div class="container">
+	<div class="header-section">Aggiorna studente</div>
+    <form action="#" th:action="@{/studenti/aggiorna/{matricola}(matricola=${studente.matricola})}"
+						th:object="${studente}" method="post">
+	   <div class="item-form">Matricola: <input type="text" th:field="*{matricola}" id="matricola" th:disabled="${matricola != null}">
+            <span th:if="${#fields.hasErrors('matricola')}" th:errors="*{matricola}"></span>
+       </div>      
+       <div class="item-form">Nome: <input type="text" th:field="*{nome}" id="nome">
+            <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span>
+       </div>  
+       <div class="item-form">Cognome: <input type="text" th:field="*{cognome}" id="cognome">
+            <span th:if="${#fields.hasErrors('cognome')}" th:errors="*{cognome}"></span>
+       </div>  
+       <div class="item-form">Data di nascita: <input type="date" pattern="yyyy-MM-dd" th:field="*{dataNascita}" id="dataNascita">
+            <span th:if="${#fields.hasErrors('dataNascita')}" th:errors="*{dataNascita}"></span>
+       </div>  
+       <div class="item-form">Indirizzo: <input type="text" th:field="*{indirizzo}" id="indirizzo">
+            <span th:if="${#fields.hasErrors('indirizzo')}" th:errors="*{indirizzo}"></span>
+       </div>  
+       <div class="item-form">Città: <input type="text" th:field="*{citta}" id="citta">
+            <span th:if="${#fields.hasErrors('citta')}" th:errors="*{citta}"></span>
+       </div>  
+       <div class="item-form">Email: <input type="text" th:field="*{email}" id="email">
+            <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+       </div>  
+       <div class="item-form">Corso di Laurea:
+         <select th:field="*{corsoLaurea}">
+           <option value="">Seleziona un corso</option>
+           <option th:each="corso : ${corsiLaurea}" th:value="${corso.codice}" th:text="${corso.nome} + ' - ' + ${corso.indirizzo}"/>
+         </select>
+       </div>
+       <div><input type="submit" value="Aggiorna studente"></div>
+    </form>
+</div>
+    <div class="link-home"><a href="/">Torna alla Home</a></div>
+</body>
+</html>

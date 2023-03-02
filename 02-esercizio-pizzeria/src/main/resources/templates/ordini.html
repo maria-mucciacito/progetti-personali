@@ -1,0 +1,41 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Welcome to Spring's Pizza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" th:href="@{/css/listaOrdini.css}"/>
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>Ordini</h1>
+		</div>
+
+		<div class="item item-numero">
+			<h2>Numero Ordine</h2>
+            <p th:text="${gestoreOrdini.getNumeroOrdine()}">
+            </p>
+		</div>
+		<div class="item item-tavolo">
+			<h2>Tavolo</h2>
+            <p th:text="${gestoreOrdini.getTavolo().toString()}"></p>
+		</div>
+
+		<div class="item item-stato">
+			<h2>Stato</h2>
+            <p th:text="${gestoreOrdini.getStato()}"></p>
+		</div>
+
+		<!-- Visualizzare la lista degli ordini   -->
+
+		
+		
+   		<!-- Aggiungere un form in cui inserire il numero dell'ordine di cui visualizzare il dettaglio   -->
+
+		
+		<div class="footer">
+			<p>copyright &copy; Spring's Pizza</p>
+		</div>
+	</div>
+</body>
+</html>

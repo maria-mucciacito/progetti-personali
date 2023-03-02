@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GestioneuniversitaApplication<gestioneuniversita>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "it.infobasic.gestioneuniversita.GestioneuniversitaApplication",
+            "projectName": "gestioneuniversita",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
